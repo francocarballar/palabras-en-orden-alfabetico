@@ -2,50 +2,61 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description"
-        content="Esta página lo que hace es ordenar una serie de palabras en base a su posicón en el alfabeto">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
-    <link rel="shortcut icon" href="./assets/icons/word.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <title>Ordenar palabras por orden alfabético</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Esta página lo que hace es ordenar una serie de palabras en base a su posicón en el alfabeto">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
+  <link rel="shortcut icon" href="./assets/icons/word.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <title>Ordenar palabras por orden alfabético</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div>
-            <figure>
-                <img src="./assets/icons/word.svg" alt="Logotipo" id="logo">
-            </figure>
-            <label class="toggle-dark-mode">
-                <span id="theme"></span>
-            </label>
-        </div>
-        <h1 class="title">Ordena tus palabras alfabeticamente</h1>
-    </header>
-    <main class="main">
-        <section class="section__add-words">
-            <label for="input__words">
-                <input type="text" placeholder="Añade tus palabras" id="input__words" name="input__words">
-                <button id="button__add" onclick="addWord();">+</button>
-            </label>
-        </section>
-        <section class="section__abc-words">
-            <ol id="ol">
-            </ol>
-        </section>
-    </main>
-    <footer class="footer">
-        <h4>©2022 creado por Franco Carballar.</h4>
-    </footer>
-    <script type="text/javascript" src="./scripts/index.js"></script>
+  <header class="header">
+    <div>
+      <figure>
+        <img src="./assets/icons/word.svg" alt="Logotipo" id="logo">
+      </figure>
+      <label class="toggle-dark-mode">
+        <span id="theme"></span>
+      </label>
+    </div>
+    <h1 class="title">Ordena tus palabras alfabeticamente</h1>
+  </header>
+  <main class="main">
+    <section class="section__add-words">
+      <label for="input__words">
+        <input type="text" placeholder="Añade tus palabras" id="input__words" name="input__words">
+        <button id="button__add" onclick="addWord();">
+          <span>+</span>
+        </button>
+      </label>
+    </section>
+    <section class="section__abc-words">
+      <ol id="ol">
+      </ol>
+      <section class="section__remove-words">
+        <button>
+          <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+              <path
+                d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z" />
+            </svg></span>
+          Borrar todas las palabras
+        </button>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <h4>©2022 creado por Franco Carballar.</h4>
+  </footer>
+  <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 
 </html>

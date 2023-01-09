@@ -1,20 +1,29 @@
 .title {
-    font-size: var(--title-desktop);
+  font-size: var(--title-desktop);
 }
 
 .section__add-words label {
-    max-width: 800px;
-    height: 50px;
+  max-width: 800px;
+  height: 50px;
 }
 
 .section__abc-words {
-    max-width: 800px;
+  max-width: 800px;
+}
+
+.section__remove-words button {
+  font-size: var(--text-desktop);
+}
+
+.section__remove-words button svg {
+  width: var(--text-desktop);
+  height: var(--text-desktop);
 }
 
 #ol li {
-    font-size: var(--text-desktop);
+  font-size: var(--text-desktop);
 }
 
 .footer h4 {
-    font-size: var(--text-desktop);
+  font-size: var(--text-desktop);
 }
